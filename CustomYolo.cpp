@@ -36,7 +36,7 @@ int main() {
     
     // Start the sink for it to start receiving messages.
     visualkit->sink().start();
-    std::cout << "press q to exit, else enter framerate" <<std::endl;
+    std::cout << "press q to exit, else send a frame to yolo detector after every n frames" <<std::endl;
     // Call the receiver of the sink to handle the message.
     while(input != "q"){
         std::cin >> input;
