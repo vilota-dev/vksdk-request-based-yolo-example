@@ -11,7 +11,7 @@
         forwards a frame to Neural Network
 
     1-16 -> auto mode.
-        sends image frames at a rate of frequency / (num).
+        sends image frames every n frames.
 */
 
 int main() {

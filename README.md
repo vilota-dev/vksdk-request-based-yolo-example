@@ -21,3 +21,14 @@ This shows the user the location of the detections as well as its labels.
 
 At the moment it prints out the image and draws the box for the detections along with the label. Comment out the opencv viewing part if the user wishes to only obtain detection locations.
 
+To use request based yolo, ensure that the following field is added in the camera_driver.json file
+```
+ "ecal_subscribers":
+    [
+    	{
+            "type": "yolo_request",
+            "output": "yolo_request",
+            "ecal_topic":"yolo_request"
+        }    
+    ],
+```
